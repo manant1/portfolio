@@ -49,6 +49,13 @@ technologies:
       - Here Maps API
       - Stripe API
       - Paypal API
+tools:
+  - Adobe XD
+  - MongoCompass
+  - Webstorm
+  - Git
+  - Terminal
+  - Chrome Dev Tools
 projectsTitle: Mano darbai
 projectsDescription: Čia yra keli man web programavimo ir dizaino projektai.
 ---
