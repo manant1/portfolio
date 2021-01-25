@@ -29,6 +29,8 @@ technologies:
       - Material design
       - Bootstrap
       - Theme UI
+      - Here Maps Javascript
+      - OpenLayers
   - type: Back-end
     description: These technologies I have used for my projects
     name:
