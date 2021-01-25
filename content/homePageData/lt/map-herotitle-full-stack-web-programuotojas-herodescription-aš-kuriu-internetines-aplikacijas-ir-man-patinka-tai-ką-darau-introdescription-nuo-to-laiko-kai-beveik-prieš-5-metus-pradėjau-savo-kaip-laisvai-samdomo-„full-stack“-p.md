@@ -58,4 +58,9 @@ tools:
   - Chrome Dev Tools
 projectsTitle: Mano darbai
 projectsDescription: Čia yra keli man web programavimo ir dizaino projektai.
+projects:
+  - image: /img/73253982_2330820143706973_1599443570467536896_n.jpg
+    name: Prestashop e-store
+    link: https://patalyneinternete.lt
+    repo: "-"
 ---
