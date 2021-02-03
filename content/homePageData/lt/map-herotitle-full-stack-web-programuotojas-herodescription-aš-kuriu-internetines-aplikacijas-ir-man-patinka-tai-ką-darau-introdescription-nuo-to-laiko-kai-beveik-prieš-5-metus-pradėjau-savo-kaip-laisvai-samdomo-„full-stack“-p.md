@@ -64,7 +64,7 @@ projects:
   - image: /img/73253982_2330820143706973_1599443570467536896_n.jpg
     name: Prestashop e-store
     link: https://patalyneinternete.lt
-    repo: "-"
+    repo: ""
   - image: /img/116262365_616165602367956_1857853385743668620_n.jpg
     name: JustLine
     link: https://justline.lt
