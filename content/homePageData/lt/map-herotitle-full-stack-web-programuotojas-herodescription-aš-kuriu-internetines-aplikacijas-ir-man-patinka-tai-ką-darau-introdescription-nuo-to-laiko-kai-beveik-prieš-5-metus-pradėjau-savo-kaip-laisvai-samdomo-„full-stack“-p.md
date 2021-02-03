@@ -68,5 +68,5 @@ projects:
   - image: /img/116262365_616165602367956_1857853385743668620_n.jpg
     name: JustLine
     link: https://justline.lt
-    repo: "-"
+    repo: ""
 ---
