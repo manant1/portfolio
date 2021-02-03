@@ -2,7 +2,7 @@
   "title": "Portfolio",
   "lt": "Lietuvių",
   "en": "Anglų",
-  "home": {
-    "title": "Pradžia"
-  }
+  "start": "Pradžia",
+  "intro": "Apie mane",
+  "myWork": "Mano darbai"
 }

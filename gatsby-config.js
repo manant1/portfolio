@@ -18,6 +18,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
+      "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -25,7 +26,21 @@ module.exports = {
         name: "images",
         path: "./src/images/",
       },
-      __key: "images",
+      __key: "images"
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/content/homePageData/lt`,
+        name: 'markdown-pages',
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/content/homePageData/en`,
+        name: 'markdown-pages',
+      }
     },
     {
       resolve: `gatsby-plugin-intl`,

@@ -1,25 +1,51 @@
 import * as React from "react"
-import {useIntl} from "gatsby-plugin-intl";
 import Layout from "../components/layout";
-
-// styles
-const pageStyles = {
-    color: "#232129",
-    padding: "96px",
-    fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-    marginTop: 0,
-    marginBottom: 64,
-    maxWidth: 320,
-}
+import Hero from "../components/hero";
+import Introduction from "../components/introduction";
+import Skills from "../components/skills";
+import Work from "../components/work";
+import ContactMe from "../components/contact-me";
 
 const IndexPage = () => {
-    const intl = useIntl();
+    const skills = [{
+        title: "Front-end",
+        description: "Front-end developer",
+        languages: ["HTML", "CSS", "MJML", "React.Js", "React Redux", "React Saga", "Angular.Js", "RxJs", "NgRx", "Gatsby.Js", "Nebular Library", "Bootstrap", "Theme UI"]
+    }, {
+        title: "Front-end",
+        description: "Front-end developer",
+        languages: ["Node.Js", "MongoDB", "Loopback", "EventStore", "Netlify", "Serverless functions", "Netlify CMS", "Contentful CMS", "Shopify", "Prestashop"]
+    }];
+
+    const tools = ["Adobe XD", "MongoCompass", "Webstorm", "Git", "Terminal", "Chrome Dev Tools"]
+
+    const projects = [{}, {}, {}];
+
     return (
-        <Layout style={pageStyles}>
-            <title>{intl.formatMessage({id: "title"})}</title>
-            <h1 style={headingStyles}>{intl.formatMessage({id: "home.title"})}</h1>
+        <Layout>
+            <Hero title={"Full-stack web developer"} text={"I design and create web applications and I love what I do"}
+                  buttonText={"Say hello"} link={"/"}/>
+            <div className="section-full-width">
+                <Introduction title={"Hi, I’m Mantas. Nice to meet you."}
+                              description={"Since beginning my journey as a freelance designer nearly 10 years ago, I’ve \n" +
+                              "done remote work for agencies, consulted for startups, and collaborated with \n" +
+                              "talented people to create digital products for both business and consumer use. \n" +
+                              "I’m quietly confident, naturally curious, and perpetually working on improving my \n" +
+                              "chops one design problem at a time.\n"}/>
+            </div>
+            <div className={"section"}>
+                <Skills skills={skills} tools={tools}/>
+            </div>
+            <div className={"section-full-width"}>
+                <Work title="My recent work"
+                      description="Here are a few design projects I’ve worked on recently. Want to see more? Email me."
+                      projects={projects}/>
+            </div>
+            <div className={"section-full-width"}>
+                <ContactMe title={"Interested in collaborating?"}
+                           description={"I’m always open to discussing product design work or partnership opportunities."}
+                           buttonText={"Say hello"}/>
+            </div>
         </Layout>
     )
 }

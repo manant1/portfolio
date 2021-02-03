@@ -1,5 +1,6 @@
 import React from "react"
 import {changeLocale, IntlContextConsumer, useIntl} from "gatsby-plugin-intl"
+import {Select} from 'theme-ui'
 
 const Language = () => {
     const intl = useIntl();
@@ -9,26 +10,20 @@ const Language = () => {
     };
 
     return (
-        <div>
-            <IntlContextConsumer>
-                {({languages, language: currentLocale}) =>
-                    languages.map(language => (
-                        <a
-                            key={language}
-                            onClick={() => changeLocale(language)}
-                            style={{
-                                color: currentLocale === language ? `yellow` : `white`,
-                                margin: 10,
-                                textDecoration: `underline`,
-                                cursor: `pointer`,
-                            }}
+        <IntlContextConsumer>
+            {({languages, language: currentLocale}) => (
+                <Select style={{width: 120}} onChange={($event) => changeLocale($event.target.value)} defaultValue={currentLocale}>
+                    {languages.map((language, index) => (
+                        <option
+                            key={index}
+                            value={language}
                         >
                             {languageName[language]}
-                        </a>
-                    ))
-                }
-            </IntlContextConsumer>
-        </div>
+                        </option>
+                    ))}
+                </Select>
+            )}
+        </IntlContextConsumer>
     )
 }
 

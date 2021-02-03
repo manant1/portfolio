@@ -2,7 +2,7 @@
   "title": "Portfolio",
   "lt": "Lithuanian",
   "en": "English",
-  "home": {
-    "title": "Home"
-  }
+  "start": "Start",
+  "intro": "Introduction",
+  "myWork": "My Works"
 }
