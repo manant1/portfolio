@@ -1,4 +1,5 @@
 ---
+locale: lt
 heroTitle: Full-stack Web programuotojas
 heroDescription: Aš kuriu internetines aplikacijas, ir man patinka tai, ką darau
 introTitle: Sveiki, aš esu Mantas

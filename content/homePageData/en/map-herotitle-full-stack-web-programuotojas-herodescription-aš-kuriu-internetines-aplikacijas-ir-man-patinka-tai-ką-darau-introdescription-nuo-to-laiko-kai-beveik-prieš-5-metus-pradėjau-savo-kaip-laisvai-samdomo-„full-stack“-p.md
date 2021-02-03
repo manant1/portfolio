@@ -1,4 +1,5 @@
 ---
+locale: en
 heroTitle: Full-stack Web developer
 heroDescription: I design and create web applications and I love what I do
 introTitle: Hi, I’m Mantas. Nice to meet you.
