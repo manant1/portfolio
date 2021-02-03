@@ -5,21 +5,17 @@ import Introduction from "../components/introduction";
 import Skills from "../components/skills";
 import Work from "../components/work";
 import ContactMe from "../components/contact-me";
+import {graphql, useStaticQuery} from "gatsby";
 
-const IndexPage = () => {
-    const skills = [{
-        title: "Front-end",
-        description: "Front-end developer",
-        languages: ["HTML", "CSS", "MJML", "React.Js", "React Redux", "React Saga", "Angular.Js", "RxJs", "NgRx", "Gatsby.Js", "Nebular Library", "Bootstrap", "Theme UI"]
-    }, {
-        title: "Front-end",
-        description: "Front-end developer",
-        languages: ["Node.Js", "MongoDB", "Loopback", "EventStore", "Netlify", "Serverless functions", "Netlify CMS", "Contentful CMS", "Shopify", "Prestashop"]
-    }];
+const IndexPage = (props) => {
 
-    const tools = ["Adobe XD", "MongoCompass", "Webstorm", "Git", "Terminal", "Chrome Dev Tools"]
+    const pageData = props.data.markdownRemark.frontmatter;
 
-    const projects = [{}, {}, {}];
+    const skills = pageData.technologies || [];
+
+    const tools = pageData.tools || [];
+
+    const projects = pageData.projects || [];
 
     return (
         <Layout>
@@ -51,3 +47,31 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+    query ($locale: String) {
+        markdownRemark(frontmatter: {locale: {eq: $locale}}) {
+            frontmatter {
+                heroDescription
+                heroTitle
+                introDescription
+                introTitle
+                projects {
+                    image
+                    link
+                    name
+                    repo
+                }
+                projectsDescription
+                projectsTitle
+                technologies {
+                    description
+                    name
+                    type
+                }
+                title
+                tools
+            }
+        }
+    }
+`

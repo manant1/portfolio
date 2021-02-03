@@ -19,6 +19,10 @@ collections:
     create: true
     i18n: true
     fields:
+      - label: Locale
+        name: locale
+        widget: string
+        i18n: true
       - label: Hero title
         name: heroTitle
         widget: string
@@ -47,7 +51,7 @@ collections:
             name: description
             widget: string
           - label: Names
-            name: name
+            name: names
             widget: list
             field: {label: Title, name: title, widget: string}
       - label: Tools

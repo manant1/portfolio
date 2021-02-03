@@ -13,7 +13,7 @@ introDescription: Nuo to laiko, kai beveik prieš 5 metus pradėjau savo kaip
 technologies:
   - type: Front-end
     description: Tai kalbos, technologijos mano naudojamos grafinės sąsajos kūrimo procese
-    name:
+    names:
       - HTML
       - CSS
       - JavaScript
@@ -34,7 +34,7 @@ technologies:
       - OpenLayers
   - type: Back-end
     description: These technologies I have used for my projects
-    name:
+    names:
       - Node.Js
       - MongoDb
       - Loopback

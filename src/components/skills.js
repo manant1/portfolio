@@ -9,7 +9,7 @@ export const Skills = ({skills, tools}) => {
             <Grid
                 gap={2}
                 columns={[skills.length]}>
-                {skills.map((s, index) => (
+                {(skills && skills.length > 0) && skills.map((s, index) => (
                     <div key={index} style={{
                         height: "100%",
                         textAlign: "center",
