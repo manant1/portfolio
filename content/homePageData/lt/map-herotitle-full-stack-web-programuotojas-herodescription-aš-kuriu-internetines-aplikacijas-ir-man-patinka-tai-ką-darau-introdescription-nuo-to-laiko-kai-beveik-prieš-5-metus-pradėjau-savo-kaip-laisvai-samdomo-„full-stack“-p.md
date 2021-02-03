@@ -5,11 +5,12 @@ heroDescription: Aš kuriu internetines aplikacijas, ir man patinka tai, ką dar
 introTitle: Sveiki, aš esu Mantas
 introDescription: Nuo to laiko, kai beveik prieš 5 metus pradėjau savo kaip
   laisvai samdomo „full-stack“ programuotojo kelionę, aš dirbau nuotolinį darbą
-  su mažoms įmonėms ir bendradarbiavau su daug talentingų žmonių, kuriant
-  internetines aplikacijas, skirtus tiek verslui, tiek vartotojams. Aš pasitikiu
-  savimi, esu smalsus ir nuolat siekiu tobulėjimo. Kauno technologijos
-  universitete baigiau informatikos magistro studijas, kurios suteikė man
-  pagrindus, kad galėčiau kokybiškai ir kryptingai dirbti.
+  su mažoms įmonėms ir bendradarbiavau su daug talentingų žmonių. Nuolat
+  tobulinu savo internetinių puslapių kūrimo ir dizaino įgūdžius, juos pritaikau
+  tiek verslui, tiek asmeniniam naudojimui. Aš pasitikiu savimi, esu smalsus ir
+  nuolat siekiu tobulėjimo. Kauno technologijos universitete baigiau
+  informatikos bakalauro studijas, kurios suteikė man pagrindus kokybiškai ir
+  kryptingai dirbti.
 technologies:
   - type: Front-end
     description: Tai kalbos, technologijos mano naudojamos grafinės sąsajos kūrimo procese
