@@ -34,7 +34,9 @@ technologies:
       - Here Maps Javascript
       - OpenLayers
   - type: Back-end
-    description: These technologies I have used for my projects
+    description: Tai yra technologijos, kurias naudoju kurti ir palaikyti
+      komponentams, kurie skirti internetinio puslapio grafinei sąsajai
+      funkcionuoti.
     names:
       - Node.Js
       - MongoDb
@@ -59,7 +61,7 @@ tools:
   - Terminal
   - Chrome Dev Tools
 projectsTitle: Mano darbai
-projectsDescription: Čia yra keli man web programavimo ir dizaino projektai.
+projectsDescription: Čia yra keli mano internetinių puslapių programavimo ir dizaino projektai.
 projects:
   - image: /img/73253982_2330820143706973_1599443570467536896_n.jpg
     name: Prestashop e-store

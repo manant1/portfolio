@@ -13,7 +13,7 @@ introDescription: Since beginning my journey as a freelance full-stack developer
   purposeful way.
 technologies:
   - type: Front-end
-    description: Tai kalbos, technologijos mano naudojamos grafinės sąsajos kūrimo procese
+    description: These are the technologies I use in creating user interfaces
     names:
       - HTML
       - CSS
@@ -34,7 +34,9 @@ technologies:
       - Here Maps Javascript
       - OpenLayers
   - type: Back-end
-    description: These technologies I have used for my projects
+    description: These are technologies I use to build and maintain the technology
+      needed to power the components which enable the user-facing side of the
+      website to exist
     names:
       - Node.Js
       - MongoDb
