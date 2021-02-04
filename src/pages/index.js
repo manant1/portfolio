@@ -5,7 +5,7 @@ import Introduction from "../components/introduction";
 import Skills from "../components/skills";
 import Work from "../components/work";
 import ContactMe from "../components/contact-me";
-import {graphql, useStaticQuery} from "gatsby";
+import {graphql} from "gatsby";
 
 const IndexPage = (props) => {
 
@@ -19,22 +19,18 @@ const IndexPage = (props) => {
 
     return (
         <Layout>
-            <Hero title={"Full-stack web developer"} text={"I design and create web applications and I love what I do"}
+            <Hero title={pageData.heroTitle} text={pageData.heroDescription}
                   buttonText={"Say hello"} link={"/"}/>
             <div className="section-full-width">
-                <Introduction title={"Hi, I’m Mantas. Nice to meet you."}
-                              description={"Since beginning my journey as a freelance designer nearly 10 years ago, I’ve \n" +
-                              "done remote work for agencies, consulted for startups, and collaborated with \n" +
-                              "talented people to create digital products for both business and consumer use. \n" +
-                              "I’m quietly confident, naturally curious, and perpetually working on improving my \n" +
-                              "chops one design problem at a time.\n"}/>
+                <Introduction title={pageData.introTitle}
+                              description={pageData.introDescription}/>
             </div>
             <div className={"section"}>
                 <Skills skills={skills} tools={tools}/>
             </div>
             <div className={"section-full-width"}>
-                <Work title="My recent work"
-                      description="Here are a few design projects I’ve worked on recently. Want to see more? Email me."
+                <Work title={pageData.projectsTitle}
+                      description={pageData.projectsDescription}
                       projects={projects}/>
             </div>
             <div className={"section-full-width"}>
@@ -49,8 +45,8 @@ const IndexPage = (props) => {
 export default IndexPage
 
 export const query = graphql`
-    query ($locale: String) {
-        markdownRemark(frontmatter: {locale: {eq: $locale}}) {
+    query ($language: String) {
+        markdownRemark(frontmatter: {locale: {eq: $language}}) {
             frontmatter {
                 heroDescription
                 heroTitle
@@ -66,7 +62,7 @@ export const query = graphql`
                 projectsTitle
                 technologies {
                     description
-                    name
+                    names
                     type
                 }
                 title

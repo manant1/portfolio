@@ -23,9 +23,9 @@ export const Skills = ({skills, tools}) => {
                             color: "primary",
                             variant: 'text.heading'
                         }}>I have experience with:</Styled.h4>
-                        {s.languages.map((l, index2) => (
+                        {s.names.map((n, index2) => (
                             <React.Fragment key={index + "-" + index2}>
-                                <span>{l}</span><br/>
+                                <span>{n}</span><br/>
                             </React.Fragment>
                         ))}
                         <br/>

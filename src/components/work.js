@@ -39,13 +39,13 @@ export const Work = ({title, description, projects}) => {
                     {projects.map((p, index) => (
                         <div key={index}>
                             <Card>
-                                asd
+                                <GatsbyImage/>
                             </Card>
                             <Grid
                                 gap={2}
                                 columns={[2, '1fr 2fr']}>
-                                <Styled.h4>Asd</Styled.h4>
-                                <a href="#">git</a>
+                                <Styled.h4>{p.name}</Styled.h4>
+                                {p.repo && <a href={p.repo}>git</a>}
                             </Grid>
                         </div>
                     ))}
