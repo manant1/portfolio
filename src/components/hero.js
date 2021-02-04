@@ -26,7 +26,7 @@ const HeroImage = () => {
 
 const Hero = ({title, text, link, buttonText}) => {
     return (
-        <div style={{textAlign: "center", height: "calc(100vh - 100px)", background: "white"}}>
+        <div className={"hero-container"}>
             <HeroImage/>
             <div className={"center"} style={{width: "90%"}}>
                 <Styled.h1
