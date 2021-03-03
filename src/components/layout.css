@@ -20,6 +20,106 @@ body {
     overflow-y: scroll;
 }
 
+.header {
+    background: white;
+    height: 100px;
+    position: fixed;
+    box-shadow: 0px 0px 8px 0px lightgrey;
+    width: 100%;
+    z-index: 1000;
+}
+
+.mobile-menu {
+    position: absolute;
+    transition: 0.45s ease-in;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid lightgrey;
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+.mobile-menu-content {
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 75px);
+    left: 50%;
+    transform: translate(-50%, calc(-50%));
+}
+
+.mobile-menu-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu-content ul li {
+    transition: 0.5s;
+}
+
+.mobile-menu-content ul li a {
+    font-size: 19px !important;
+}
+
+.mobile-menu-content ul li:hover {
+    text-decoration: underline;
+}
+
+#nav-icon {
+    width: 25px;
+    height: 30px;
+    position: relative;
+    margin: 5px auto;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
+    top: 8px;
+}
+
+#nav-icon span:nth-child(4) {
+    top: 16px;
+}
+
+#nav-icon.open span:nth-child(1) {
+    top: 9px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+    top: 9px;
+    width: 0%;
+    left: 50%;
+}
+
 .hero-container {
     text-align: center;
     height: calc(100vh - 100px);
@@ -155,7 +255,17 @@ body {
     transform: translateY(-50%);
 }
 
+@media only screen and (min-width: 769px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    .header {
+        height: 75px;
+    }
+
     .section {
         width: 100%;
         padding: 10px 20px 10px 20px;

@@ -4,7 +4,8 @@ import React from "react"
 import Language from "./language"
 import GatsbyImage from "gatsby-image";
 import {Grid} from 'theme-ui'
-import { useIntl } from "gatsby-plugin-intl"
+import {useIntl} from "gatsby-plugin-intl"
+import CustomButton from "./button";
 
 const navLinkStyle = {
     color: `black`,
@@ -32,18 +33,47 @@ const Logo = () => {
 
 const Header = () => {
     const intl = useIntl();
+    const [open, setOpen] = React.useState(false);
 
     return (
         <header
-            style={{
-                background: `white`,
-                height: 100,
-                position: "fixed",
-                boxShadow: "0px 0px 8px 0px lightgrey",
-                width: "100%",
-                zIndex: 1000
-            }}
+            className={"header"}
         >
+            <div className={"mobile-menu"} style={{height: open ? "100vh" : "0px"}}>
+                <div className={"mobile-menu-content"}>
+                    <ul>
+                        <li>
+                            <a onClick={() => setOpen(false)} href={"#start"} style={navLinkStyle}>
+                                {intl.formatMessage({id: "start"})}
+                            </a>
+                        </li>
+                        <li>
+                            <a onClick={() => setOpen(false)} href={"#intro"} style={navLinkStyle}>
+                                {intl.formatMessage({id: "intro"})}
+                            </a>
+                        </li>
+                        <li style={{borderBottom: "1px solid lightgrey"}}>
+                            <a onClick={() => setOpen(false)} href={"#work"} style={navLinkStyle}>
+                                {intl.formatMessage({id: "myWork"})}
+                            </a>
+                        </li>
+                        <li>
+                            &nbsp;
+                        </li>
+                        <li>
+                            <Grid gap={2}
+                                  columns={[2]}>
+                                <Language/>
+                                <Link>
+                                    <CustomButton variant={"primary"}>
+                                        {intl.formatMessage({id: "sayHello"})}
+                                    </CustomButton>
+                                </Link>
+                            </Grid>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div
                 style={{
                     margin: `0 auto`,
@@ -65,21 +95,41 @@ const Header = () => {
                     >
                         <Logo className={"top-middle"}/>
                     </Link>
+                    <div className={"desktop-hidden"}>
+                        <div id="nav-icon" onClick={() => setOpen(!open)} className={open ? "open" : ""} style={{
+                            cursor: "pointer",
+                            position: "absolute",
+                            top: "50%",
+                            right: 15,
+                            transform: "translateY(-50%)"
+                        }}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <Grid gap={2}
                           columns={[2, "2fr 1fr"]}>
-                        <nav className={"mobile-hidden"} style={{textAlign: "right", display: "flex", fontSize: 22, fontWeight: 500, justifyContent: "space-around"}}>
+                        <nav className={"mobile-hidden"} style={{
+                            textAlign: "right",
+                            display: "flex",
+                            fontSize: 22,
+                            fontWeight: 500,
+                            justifyContent: "space-around"
+                        }}>
                             <a href={"#start"} style={navLinkStyle}>
-                                {intl.formatMessage({ id: "start" })}
+                                {intl.formatMessage({id: "start"})}
                             </a>
                             <a href={"#intro"} style={navLinkStyle}>
-                                {intl.formatMessage({ id: "intro" })}
+                                {intl.formatMessage({id: "intro"})}
                             </a>
                             <a href={"#work"} style={navLinkStyle}>
-                                {intl.formatMessage({ id: "myWork" })}
+                                {intl.formatMessage({id: "myWork"})}
                             </a>
                         </nav>
                         <div className={"mobile-hidden"} style={{margin: "auto"}}>
-                            <Language />
+                            <Language/>
                         </div>
                     </Grid>
                 </Grid>
