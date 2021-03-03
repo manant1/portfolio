@@ -1,7 +1,7 @@
 ---
 locale: lt
 heroTitle: Full-stack Web programuotojas
-heroDescription: Aš kuriu internetines aplikacijas, ir man patinka tai, ką darau
+heroDescription: Aš kuriu internetines aplikacijas, ir man patinka tai, ką darau.
 introTitle: Sveiki, aš esu Mantas
 introDescription: Nuo to laiko, kai beveik prieš 5 metus pradėjau savo kaip
   laisvai samdomo „full-stack“ programuotojo kelionę, aš dirbau nuotolinį darbą
