@@ -4,5 +4,11 @@
   "en": "English",
   "start": "Start",
   "intro": "Introduction",
-  "myWork": "My Works"
+  "myWork": "My Works",
+  "sayHeelo": "Say hello",
+  "interestedInCollaborating": "Interested in collaborating?",
+  "discussOpportunities": "I’m always open to discussing product design work or partnership opportunities.",
+  "handcraftedByMe": "Handcrafted by me",
+  "builtWith": "Built with Gatsby.Js",
+  "footerCitation": "Talk is cheap. Show me the code."
 }

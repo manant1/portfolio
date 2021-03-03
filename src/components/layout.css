@@ -1,9 +1,9 @@
 html {
-    font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     width: 100%;
     height: 100%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -12,11 +12,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
     width: 100%;
     height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
 }
 
 .hero-container {
     text-align: center;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
     background: white;
 }
 
@@ -78,11 +80,85 @@ body {
     position: relative;
 }
 
+.skills-col {
+    border-bottom: 1px solid lightgrey;
+}
+
+.skills-col:first-child {
+    border-right: 1px solid lightgrey;
+}
+
+.project-img-container {
+    position: relative;
+}
+
+.project-img-container:hover div {
+    transform:translate(0);
+    opacity: 1;
+}
+
+.project-img-container:hover .project-img-links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    height: fit-content;
+}
+
+.project-img-container:hover div img {
+    opacity: 0.5;
+}
+
+.project-img-container:hover div svg {
+    color: #6a3fdc;
+    margin: 5px;
+    background: white;
+    border-radius: 20px;-conta
+    overflow: visible;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 13%);
+}
+
+.link-no-style {
+    color: unset;
+    text-decoration: unset;
+}
+
+.project-img-container div {
+    transform:translate(9999px);
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.5s linear;
+    position: absolute;
+    background: rgba(211, 211, 211, 0.74);
+    top: 0;
+    left: 0;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @media only screen and (max-width: 768px) {
     .section {
         width: 100%;
-        margin: 0;
-        padding: 0;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .skills-col:first-child {
+        border-right: none;
     }
 
     .skills-card {
@@ -109,20 +185,7 @@ body {
 
     .hero-container {
         text-align: center;
-        height: calc(100vh - 200px);
+        height: calc(100vh - 225px);
         background: white;
     }
-}
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.top-middle {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }

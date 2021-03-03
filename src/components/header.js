@@ -31,13 +31,17 @@ const Logo = () => {
 }
 
 const Header = () => {
-    const intl = useIntl()
+    const intl = useIntl();
 
     return (
         <header
             style={{
                 background: `white`,
-                height: 100
+                height: 100,
+                position: "fixed",
+                boxShadow: "0px 0px 8px 0px lightgrey",
+                width: "100%",
+                zIndex: 1000
             }}
         >
             <div
@@ -62,8 +66,8 @@ const Header = () => {
                         <Logo className={"top-middle"}/>
                     </Link>
                     <Grid gap={2}
-                          columns={[2]}>
-                        <nav className={"mobile-hidden"} style={{textAlign: "right", display: "flex", justifyContent: "space-around"}}>
+                          columns={[2, "2fr 1fr"]}>
+                        <nav className={"mobile-hidden"} style={{textAlign: "right", display: "flex", fontSize: 22, fontWeight: 500, justifyContent: "space-around"}}>
                             <a href={"#start"} style={navLinkStyle}>
                                 {intl.formatMessage({ id: "start" })}
                             </a>
@@ -86,11 +90,11 @@ const Header = () => {
 }
 
 Header.propTypes = {
-    siteTitle: PropTypes.string,
+    siteTitle: PropTypes.string
 }
 
 Header.defaultProps = {
-    siteTitle: ``,
+    siteTitle: ``
 }
 
 export default Header

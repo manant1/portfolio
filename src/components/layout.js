@@ -7,8 +7,9 @@ import "./layout.css"
 import {graphql, useStaticQuery} from "gatsby";
 import GatsbyImage from "gatsby-image";
 import {Styled, jsx} from "theme-ui";
+import {useIntl} from "gatsby-plugin-intl";
 
-const Layout = ({children, intl}) => {
+const Layout = ({children}) => {
     const Logo = () => {
         const data = useStaticQuery(graphql`
             query {
@@ -24,6 +25,7 @@ const Layout = ({children, intl}) => {
 
         return <GatsbyImage fixed={data.placeholderImage.childImageSharp.fixed}/>
     }
+    const intl = useIntl();
 
     return (
         <>
@@ -32,9 +34,9 @@ const Layout = ({children, intl}) => {
             <footer sx={{bg: "primary", color: "white"}}>
                 <div style={{textAlign: "center", padding: "40px 0px 40px 0px"}}>
                     <Logo/>
-                    <Styled.p><b>Living, learning & leveling up one day at a time</b></Styled.p>
-                    <Styled.p>Handcrafted by me © {new Date().getFullYear()}</Styled.p>
-                    <Styled.p>Built with Gatsby.Js</Styled.p>
+                    <Styled.p><b>{intl.formatMessage({id: "footerCitation"})}</b></Styled.p>
+                    <Styled.p>{intl.formatMessage({id: "handcraftedByMe"})} © {new Date().getFullYear()}</Styled.p>
+                    <Styled.p>{intl.formatMessage({id: "builtWith"})}</Styled.p>
                 </div>
             </footer>
         </>
@@ -42,7 +44,7 @@ const Layout = ({children, intl}) => {
 }
 
 Layout.propTypes = {
-    children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired
 }
 
 export default injectIntl(Layout)

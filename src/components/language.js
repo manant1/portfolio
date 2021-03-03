@@ -15,6 +15,7 @@ const Language = () => {
                 <Select style={{width: 120}} onChange={($event) => changeLocale($event.target.value)} defaultValue={currentLocale}>
                     {languages.map((language, index) => (
                         <option
+                            style={{"background": "black"}}
                             key={index}
                             value={language}
                         >

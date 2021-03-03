@@ -21,10 +21,30 @@ module.exports = {
       "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: 'Ubuntu',
+            variable: true,
+            weights: ['200..900']
+          }
+        ]
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
         path: "./src/images/",
+      },
+      __key: "images"
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./static/img/",
       },
       __key: "images"
     },

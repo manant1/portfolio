@@ -6,14 +6,18 @@ import {Card, Grid, Styled, jsx} from "theme-ui";
 export const Skills = ({skills, tools}) => {
     return (
         <Card className={"skills-card"}>
-            <Grid
-                gap={2}
-                columns={[skills.length]}>
+            <div
+                sx={{
+                    display: 'grid',
+                    gridTemplateColumns: [
+                        'auto',
+                        '1fr 1fr'
+                    ]
+                }}>
                 {(skills && skills.length > 0) && skills.map((s, index) => (
-                    <div key={index} style={{
+                    <div key={index} className={"skills-col"} style={{
                         height: "100%",
-                        textAlign: "center",
-                        borderRight: index + 1 !== skills.length ? "1px solid lightgrey" : 0
+                        textAlign: "center"
                     }}>
                         <Styled.h3 sx={{
                             variant: 'text.heading'
@@ -31,8 +35,8 @@ export const Skills = ({skills, tools}) => {
                         <br/>
                     </div>
                 ))}
-            </Grid>
-            <div style={{textAlign: "center", padding: "15px", borderTop: "1px solid lightgrey"}}>
+            </div>
+            <div style={{textAlign: "center", padding: "15px"}}>
                 <Styled.h4 sx={{
                     color: "primary",
                     variant: 'text.heading'

@@ -3,9 +3,7 @@ export default {
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
     fonts: {
         body:
-            'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-        heading: 'inherit',
-        monospace: 'Menlo, monospace',
+            'Ubuntu, sans-serif'
     },
     fontSizes: [14, 16, 20, 24, 32, 48, 64, 96],
     fontWeights: {
@@ -26,7 +24,7 @@ export default {
     },
     text: {
         heading: {
-            fontFamily: 'heading',
+            fontFamily: 'Ubuntu, sans-serif',
             lineHeight: 'heading',
             fontWeight: 'heading',
         },
@@ -48,7 +46,7 @@ export default {
     },
     styles: {
         root: {
-            fontFamily: 'body',
+            fontFamily: 'Ubuntu, sans-serif',
             lineHeight: 'body',
             fontWeight: 'body',
         },
@@ -77,14 +75,14 @@ export default {
             fontSize: 0,
         },
         pre: {
-            fontFamily: 'monospace',
+            fontFamily: 'Ubuntu, sans-serif',
             overflowX: 'auto',
             code: {
                 color: 'inherit',
             },
         },
         code: {
-            fontFamily: 'monospace',
+            fontFamily: 'Ubuntu, sans-serif',
             fontSize: 'inherit',
         },
         table: {
@@ -103,6 +101,7 @@ export default {
     },
     buttons: {
         primary: {
+            fontFamily: 'Ubuntu, sans-serif',
             color: 'primary',
             bg: 'background',
             transition: 'all 300ms ease-in-out',
@@ -115,5 +114,8 @@ export default {
             color: 'background',
             bg: 'secondary',
         }
+    },
+    select: {
+        fontFamily: 'Ubuntu, sans-serif'
     }
 }
