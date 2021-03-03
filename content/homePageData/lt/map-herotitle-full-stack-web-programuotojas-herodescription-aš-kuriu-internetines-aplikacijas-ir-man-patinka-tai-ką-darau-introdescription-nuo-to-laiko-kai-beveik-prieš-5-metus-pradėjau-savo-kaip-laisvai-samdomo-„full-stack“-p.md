@@ -75,4 +75,8 @@ projects:
     link: https://designs-checkout-1.netlify.app/
     repo: https://github.com/manant1/checkout-desing-1
     image: /img/screenshot-2021-03-03-at-18.13.58.png
+  - image: /img/top-banner-module-logo.png
+    name: Top Banner Prestahop modulis
+    link: https://github.com/manant1/prestahop-top-banner
+    repo: https://github.com/manant1/prestahop-top-banner
 ---
