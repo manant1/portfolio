@@ -63,7 +63,7 @@ tools:
 projectsTitle: Mano darbai
 projectsDescription: Čia yra keli mano internetinių puslapių programavimo ir dizaino projektai.
 projects:
-  - image: /img/73253982_2330820143706973_1599443570467536896_n.jpg
+  - image: /img/patalyne.png
     name: Patalynės krautuvėlė
     link: https://patalyneinternete.lt
     repo: ""
