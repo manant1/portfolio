@@ -71,7 +71,7 @@ projects:
     name: JustLine
     link: https://justline.lt
     repo: ""
-  - name: Checkout design 1
+  - name: Užsakymo puslapio dizainas 1
     link: https://designs-checkout-1.netlify.app/
     repo: https://github.com/manant1/checkout-desing-1
     image: /img/screenshot-2021-03-03-at-18.13.58.png

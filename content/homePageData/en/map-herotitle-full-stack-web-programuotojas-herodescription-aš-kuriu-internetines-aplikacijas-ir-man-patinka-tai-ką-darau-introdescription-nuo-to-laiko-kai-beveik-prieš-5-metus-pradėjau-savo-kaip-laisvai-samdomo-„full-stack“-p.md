@@ -63,12 +63,20 @@ tools:
 projectsTitle: My recent work
 projectsDescription: Here are a few design projects I’ve worked on recently.
 projects:
-  - image: /img/73253982_2330820143706973_1599443570467536896_n.jpg
-    name: Prestashop e-store
+  - image: /img/patalyne.png
+    name: Prestashop bedding store
     link: https://patalyneinternete.lt
-    repo: "-"
+    repo: ""
   - image: /img/116262365_616165602367956_1857853385743668620_n.jpg
     name: JustLine
     link: https://justline.lt
-    repo: "-"
+    repo: ""
+  - image: /img/screenshot-2021-03-03-at-18.13.58.png
+    name: Checkout design 1
+    link: https://designs-checkout-1.netlify.app/
+    repo: https://github.com/manant1/checkout-desing-1
+  - image: /img/top-banner-module-logo.png
+    name: Prestahop Top Banner module
+    link: https://github.com/manant1/prestahop-top-banner
+    repo: https://github.com/manant1/prestahop-top-banner
 ---
