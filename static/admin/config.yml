@@ -71,7 +71,7 @@ collections:
         name: projects
         widget: list
         fields:
-          - {label: Image, name: image, widget: image, i18n: false}
+          - {label: Image, name: image, widget: image, i18n: true}
           - {label: Name, name: name, widget: string, i18n: true}
-          - {label: Link, name: link, widget: string, i18n: false}
-          - {label: Repo, name: repo, widget: string, required: false, i18n: false}
+          - {label: Link, name: link, widget: string, i18n: true}
+          - {label: Repo, name: repo, widget: string, required: false, i18n: true}
