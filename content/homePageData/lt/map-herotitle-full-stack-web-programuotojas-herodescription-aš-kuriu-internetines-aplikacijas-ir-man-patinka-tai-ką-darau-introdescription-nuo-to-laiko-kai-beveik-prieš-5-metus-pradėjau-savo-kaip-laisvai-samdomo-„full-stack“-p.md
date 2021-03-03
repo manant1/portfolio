@@ -64,7 +64,7 @@ projectsTitle: Mano darbai
 projectsDescription: Čia yra keli mano internetinių puslapių programavimo ir dizaino projektai.
 projects:
   - image: /img/73253982_2330820143706973_1599443570467536896_n.jpg
-    name: Prestashop e-store
+    name: Patalynės krautuvėlė
     link: https://patalyneinternete.lt
     repo: ""
   - image: /img/116262365_616165602367956_1857853385743668620_n.jpg
