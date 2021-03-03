@@ -5,10 +5,12 @@
   "start": "Start",
   "intro": "Introduction",
   "myWork": "My Works",
-  "sayHeelo": "Say hello",
+  "sayHello": "Say hello",
   "interestedInCollaborating": "Interested in collaborating?",
   "discussOpportunities": "I’m always open to discussing product design work or partnership opportunities.",
   "handcraftedByMe": "Handcrafted by me",
   "builtWith": "Built with Gatsby.Js",
-  "footerCitation": "Talk is cheap. Show me the code."
+  "footerCitation": "Talk is cheap. Show me the code.",
+  "haveExperienceWith": "I have experience with:",
+  "developmentTools": "Development tools:"
 }

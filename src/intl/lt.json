@@ -10,5 +10,7 @@
   "discussOpportunities": "Esu atviras bet kokioms bendradarbiavimo idėjoms.",
   "handcraftedByMe": "Mantas Antanaitis",
   "builtWith": "Sukurta su Gatsby.Js",
-  "footerCitation": "Talk is cheap. Show me the code."
+  "footerCitation": "Talk is cheap. Show me the code.",
+  "haveExperienceWith": "Turiu patirties su:",
+  "developmentTools": "Darbui naudojami įrankiai:"
 }
