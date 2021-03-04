@@ -1,6 +1,6 @@
 import React from "react";
 /** @jsx jsx */
-import {Styled, jsx} from 'theme-ui';
+import {Styled, jsx, Card} from 'theme-ui';
 import {graphql, useStaticQuery, Link} from "gatsby";
 import GatsbyImage from "gatsby-image";
 import {useIntl} from "gatsby-plugin-intl";
@@ -28,22 +28,24 @@ const SuccessForm = (props) => {
     const intl = useIntl();
 
     return <div style={{position: "relative", height: "100vh", width: "100%"}}>
-        <div style={{position: "absolute", width: "50%", top: "50%", left: "50%", textAlign: "center", transform: "translate(-50%, -50%)"}}>
-            <Image/>
-            <Styled.h1
-                sx={{
-                    variant: 'text.heading'
-                }}>
-                {intl.formatMessage({id: "formSubmittedTitle"})}
-            </Styled.h1>
-            <p>
-                {intl.formatMessage({id: "formSubmittedMessage"})}
-            </p>
-            <Link to={"/"}>
-                <CustomButton style={{textAlign: "center"}} variant={"primary"}>
-                    {intl.formatMessage({id: "toFirstPage"})}
-                </CustomButton>
-            </Link>
+        <div style={{position: "absolute", width: "60%", top: "50%", left: "50%", textAlign: "center", transform: "translate(-50%, -50%)"}}>
+            <Card style={{padding: "50px"}}>
+                <Image/>
+                <Styled.h1
+                    sx={{
+                        variant: 'text.heading'
+                    }}>
+                    {intl.formatMessage({id: "formSubmittedTitle"})}
+                </Styled.h1>
+                <p>
+                    {intl.formatMessage({id: "formSubmittedMessage"})}
+                </p>
+                <Link to={"/"}>
+                    <CustomButton style={{textAlign: "center"}} variant={"primary"}>
+                        {intl.formatMessage({id: "toFirstPage"})}
+                    </CustomButton>
+                </Link>
+            </Card>
         </div>
     </div>
 }
