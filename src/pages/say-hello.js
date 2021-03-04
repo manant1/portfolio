@@ -42,11 +42,12 @@ const SayHello = (props) => {
                     </ul>
                 </div>
                 <div>
-                    <form name="contact" method="post" data-netlify="true"
+                    <form name="contact" method="get" action="/success" data-netlify="true"
                           data-netlify-honeypot="bot-field">
                         <Label htmlFor='username'>{intl.formatMessage({id: "name"})}</Label>
                         <Input
                             id="name"
+                            required
                             type="fname"
                             name="name"
                         />
@@ -54,12 +55,14 @@ const SayHello = (props) => {
                         <Input
                             name='email'
                             type="email"
+                            required
                             id="email"
                             mb={3}
                         />
                         <Label htmlFor='username'>{intl.formatMessage({id: "message"})}</Label>
                         <Textarea
                             id="message"
+                            required
                             name='message'
                             rows='6'
                             mb={3}

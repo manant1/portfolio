@@ -18,5 +18,8 @@
   "message": "Message",
   "send": "Send",
   "phoneNumber": "Phone number",
-  "individualActivityNumber": "Individual activity NO."
+  "individualActivityNumber": "Individual activity NO.",
+  "formSubmittedTitle": "Form submitted successfully",
+  "formSubmittedMessage": "I will react you as soon as possible. usually in one working day.",
+  "toFirstPage": "To home page"
 }
