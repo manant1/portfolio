@@ -13,7 +13,7 @@ export const Work = ({title, description, images, projects}) => {
             query {
                 placeholderImage: file(relativePath: { eq: "watercooler.png" }) {
                     childImageSharp {
-                        fixed(height: 151) {
+                        fixed(height: 140) {
                             ...GatsbyImageSharpFixed
                         }
                     }

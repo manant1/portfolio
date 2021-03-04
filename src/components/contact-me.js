@@ -3,7 +3,7 @@ import React from "react"
 import {Styled, jsx} from "theme-ui"
 import PropTypes from "prop-types";
 import CustomButton from "./button";
-import {graphql, useStaticQuery} from "gatsby";
+import {graphql, useStaticQuery, Link} from "gatsby";
 import GatsbyImage from "gatsby-image";
 
 export const ContactMe = ({title, description, buttonText, link}) => {
@@ -34,9 +34,11 @@ export const ContactMe = ({title, description, buttonText, link}) => {
             <Styled.p style={{width: "75%", margin: "20px auto"}}>
                 {description}
             </Styled.p>
+            <Link to={"say-hello"}>
             <CustomButton variant={"primary"}>
                 {buttonText}
             </CustomButton>
+            </Link>
         </div>
     )
 }

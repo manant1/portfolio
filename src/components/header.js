@@ -6,6 +6,7 @@ import GatsbyImage from "gatsby-image";
 import {Grid} from 'theme-ui'
 import {useIntl} from "gatsby-plugin-intl"
 import CustomButton from "./button";
+import classnames from "classnames"
 
 const navLinkStyle = {
     color: `black`,
@@ -39,7 +40,7 @@ const Header = () => {
         <header
             className={"header"}
         >
-            <div className={"mobile-menu"} style={{height: open ? "100vh" : "0px"}}>
+            <div className={classnames("mobile-menu", "desktop-hidden")} style={{height: open ? "100vh" : "0px"}}>
                 <div className={"mobile-menu-content"}>
                     <ul>
                         <li>
@@ -64,7 +65,7 @@ const Header = () => {
                             <Grid gap={2}
                                   columns={[2]}>
                                 <Language/>
-                                <Link>
+                                <Link to={"say-hello"}>
                                     <CustomButton variant={"primary"}>
                                         {intl.formatMessage({id: "sayHello"})}
                                     </CustomButton>

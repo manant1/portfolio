@@ -12,5 +12,11 @@
   "builtWith": "Built with Gatsby.Js",
   "footerCitation": "Talk is cheap. Show me the code.",
   "haveExperienceWith": "I have experience with:",
-  "developmentTools": "Development tools:"
+  "developmentTools": "Development tools:",
+  "email": "Email",
+  "name": "Name",
+  "message": "Message",
+  "send": "Send",
+  "phoneNumber": "Phone number",
+  "individualActivityNumber": "Individual activity NO."
 }

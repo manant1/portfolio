@@ -32,7 +32,7 @@ const IndexPage = (props) => {
     return (
         <Layout>
             <Hero title={pageData.heroTitle} text={pageData.heroDescription}
-                  buttonText={intl.formatMessage({id: "sayHello"})} link={"/"}/>
+                  buttonText={intl.formatMessage({id: "sayHello"})} link={"say-hello"}/>
             <div ref={aboutMeRef} className="section-full-width">
                 <Introduction title={pageData.introTitle}
                               description={pageData.introDescription}/>

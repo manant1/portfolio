@@ -6,7 +6,7 @@ export const CustomButton = ({children, style}) => {
     const [hover, setOnHover] = useState(false);
 
     return (
-        <Button onMouseEnter={() => setOnHover(true)} onMouseLeave={() => setOnHover(false)} variant={"primary"} sx={{
+        <Button style={style} onMouseEnter={() => setOnHover(true)} onMouseLeave={() => setOnHover(false)} variant={"primary"} sx={{
             border: "1px solid",
             borderRadius: 20,
             paddingLeft: "25px",

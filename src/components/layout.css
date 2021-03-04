@@ -20,6 +20,21 @@ body {
     overflow-y: scroll;
 }
 
+.say-hello-section {
+    padding: 125px 50px 50px 50px;
+}
+
+.personal-info-list {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.personal-info-list li span {
+    text-align: right;
+    width: 100%;
+}
+
 .header {
     background: white;
     height: 100px;

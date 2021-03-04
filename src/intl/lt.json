@@ -12,5 +12,11 @@
   "builtWith": "Sukurta su Gatsby.Js",
   "footerCitation": "Talk is cheap. Show me the code.",
   "haveExperienceWith": "Turiu patirties su:",
-  "developmentTools": "Darbui naudojami įrankiai:"
+  "developmentTools": "Darbui naudojami įrankiai:",
+  "email": "El. paštas",
+  "name": "Vardas",
+  "message": "Žinutė",
+  "send": "Siųsti",
+  "phoneNumber": "Tel. numeris",
+  "individualActivityNumber": "IV nr."
 }
